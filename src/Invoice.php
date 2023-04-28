@@ -251,4 +251,15 @@ class Invoice
     {
         return new MatchReference($this->getOffice(), $this->getFinancialCode(), $this->getFinancialNumber(), 1);
     }
+
+    public function setDebitCredit($debitCredit)
+    {
+        $this->debitCredit = $debitCredit;
+        return $this;
+    }
+
+    public function getDebitCredit()
+    {
+        return $this->debitCredit;
+    }
 }
